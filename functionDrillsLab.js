@@ -5,7 +5,7 @@
 */
 
 //CODE HERE
-
+function helloWorld 
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
