@@ -5,9 +5,9 @@
 */
 
 //CODE HERE
-// function greeting(hello) {
-//   console.log(hello)
-// }
+function greeting(hello) {
+console.log(hello)
+}
 
 // greeting("Hello, World!")
 
@@ -18,11 +18,11 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
-// function printName(name) {
-//   console.log(name)
-// }
-// printName('Cameron')
+// CODE HERE
+function printName(name) {
+  console.log(name)
+}
+printName('Cameron')
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called greeting that
@@ -35,10 +35,10 @@
 */
 
 //CODE HERE
-// function greeting(name) {
-//   console.log(`Hello, ` + `${name}`)
-// }
-// greeting('Jake')
+function greeting(name) {
+  console.log(`Hello, ` + `${name}`)
+}
+greeting('Jake')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -171,7 +171,17 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
-
+function theEliminator(contestants, loser) {
+  for(let i = 0; i < contestants.length; i++) {
+    //console.log(contestants)
+    let pos = 3
+    let n = 1
+    loser = contestants.splice(pos, n); {
+      return console.log(contestants)
+    } 
+  }
+}
+theEliminator(contestants, loser)
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -181,7 +191,15 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function greeting(introduction){
+  let introUpper = introduction.toUpperCase(); {
+    console.log(introUpper)
+  }
+}
+greeting(sampleString)
+// let lowerString = 'lowercase letters'
+// let upperString = lowerString.toUpperCase()
+// console.log(upperString)
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -194,6 +212,17 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+function emailCheck(email) {
+    email.split('')
+    console.log(email.split(''))
+    if (email.includes('@')) {
+      console.log('email verified') 
+     } else {
+       console.log('must provide a valid email address')
+     } 
+    }
+let email = 'cindy24@gmail.com'
+emailCheck(email)
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -201,7 +230,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function buyIt(gold) {
+  chocolateFrogs = gold / 3
+  console.log(chocolateFrogs)
+}
 
+totalFrogs = buyIt(7)
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
@@ -209,6 +243,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function buyIt2(gold) {
+  chocolateFrogs = gold / 3 
+  console.log(Math.round(chocolateFrogs))
+  }
+
+totalFrogs2 = buyIt2(4)
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -218,6 +258,9 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+  //for(let i = 0; i < num.length; i++) {
+  //   if(num[i] === true)
+  // }
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -242,13 +285,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["duck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["duck"]
